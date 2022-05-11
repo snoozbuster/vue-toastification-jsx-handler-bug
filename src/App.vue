@@ -13,9 +13,12 @@ export default {
   methods: {
     getJsx() {
       return (
-        <button onClick={() => alert('ok!')}>
-          Click me!
-        </button>
+        <span>
+          Click to undo
+          <button style="margin-left: 30px" onClick={() => alert('undone!')}>
+            Undo
+          </button>
+        </span>
       )
     },
     openGoodToast() {

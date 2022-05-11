@@ -1,24 +1,11 @@
 # vue-toastification-jsx-handler-bug
 
-## Project setup
-```
-npm install
-```
+Reproduces an issue with JSX toast content in vue-toastification 1.7.14. Event handlers do not work if JSX is passed directly as the toast content. However, if the JSX is wrapped in a component containing a render function, then the event handlers work fine.
 
-### Compiles and hot-reloads for development
+## Run the sample
+
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+There are two buttons. One produces a toast with a working button, the other does not. The expectation is that both would work equivalently.
